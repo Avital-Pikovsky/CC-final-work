@@ -1,0 +1,1 @@
+Total arrived packets: 45, total dropped packets: 38, total transmitted packets: 7, total transmitted value: 75.
