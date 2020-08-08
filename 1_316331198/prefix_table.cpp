@@ -63,22 +63,22 @@ void fun(string function, string binary, string lastChar, node *root, string adr
         add(root, binary, lastChar);
         int dep = depth(root);
         int leaf = nodesCount(root);
-        cout << "Added " << adress << " " << lastChar << " at the depth " << dep << " total nodes " << leaf << endl;
+        cout << "Added " << adress << " " << lastChar << " at the depth " << dep << " total nodes " << leaf << "." << endl;
     }
 
     else if (function == "FIND")
     {
-        find(root, binary);
-        int dep = depth(root);
-        cout << "Found " << adress << " at the depth " << dep << endl;
+        find(root, binary, adress);
     }
 
     else if (function == "REMOVE")
     {
-        remove(root, binary, lastChar);
-        int dep = depth(root);
-        int leaf = nodesCount(root);
-        cout << "Removed " << adress << " " << lastChar << " at the depth " << dep << " total nodes " << leaf << endl;
+        if(remove(root, binary, lastChar))
+        {
+            int dep = depth(root);
+            int leaf = nodesCount(root);
+            cout << "Removed " << adress << " " << lastChar << " at the depth " << dep << " total nodes " << leaf << endl;
+        }
     }
 }
 /**

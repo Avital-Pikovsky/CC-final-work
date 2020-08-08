@@ -69,7 +69,7 @@ int depth(node *root)
 @description: A function that finds for a prefix in a trie.
 @example:FIND (function), 255.255.255.0 (prefix).
 **/
-void find(node *root, string binary)
+void find(node *root, string binary, string adress)
 {
     int depth = 0;
     int temporary_depth = 0;
@@ -103,11 +103,24 @@ void find(node *root, string binary)
             break;
         }
     }
-    if (result != result_end)
-        temporary_depth++;
+    if (!result.empty() || !result_end.empty())
+    {
 
+        if (result != result_end) //Not the end of the trie
+        {
+            temporary_depth++;
+            cout << "Found " << adress << result << " at the depth " << temporary_depth << "." << endl;
+        }
+
+        else //The end of the trie
+        {
+            depth++;
+            cout << "Found " << adress << result << " at the depth " << depth << "." << endl;
+        }
+    }
     else
-        depth++;
+
+        cout << "Not found " << adress << endl;
 }
 
 /**
@@ -159,14 +172,13 @@ bool search(node *root, string binary, string lastChar)
 first check if the prefix exist.
 @example:REMOVE (function), 255.255.255/24 (prefix), A(result).
 **/
-void remove(node *root, string binary, string lastChar)
+bool remove(node *root, string binary, string lastChar)
 {
     if (!search(root, binary, lastChar))
     {
         printf("This prefix doesn't exist, can't remove it\n");
-        return;
+        return false;
     }
-    //cout<<"search(root, binary, lastChar)"<<search(root, binary, lastChar)<<endl;
     int i;
     for (i = 0; i < binary.size(); i++)
     {
@@ -203,6 +215,7 @@ void remove(node *root, string binary, string lastChar)
         root->result_name = nullptr;
         root->result_place = false;
     }
+    return true;
 }
 /**
 @input: string of decimal number.
