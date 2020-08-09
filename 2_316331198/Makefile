@@ -1,15 +1,22 @@
 CC = clang++-9
 FLAGS = -Wall -g
 
-all: congestion_control
+all: edf bd
 
-congestion_control: congestion_control.o 
-	$(CC) $(FLAGS) -o congestion_control congestion_control.o 
+edf: edf.o 
+	$(CC) $(FLAGS) -o edf edf.o 
 
-congestion_control.o: congestion_control.cpp
-	$(CC) $(FLAGS) -c congestion_control.cpp
+edf.o: edf.cpp
+	$(CC) $(FLAGS) -c edf.cpp
+
+bd: bd.o 
+	$(CC) $(FLAGS) -o bd bd.o 
+
+bd.o: bd.cpp
+	$(CC) $(FLAGS) -c bd.cpp
+
 
 .PHONY: clean all
 
 clean:
-	rm -f *.o congestion_control
+	rm -f *.o edf bd
