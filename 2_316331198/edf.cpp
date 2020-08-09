@@ -191,7 +191,7 @@ void EDF(string queue, string _file)
 }
 /**
 @description: Reading from the terminal
-@example: ./edf(algorithm), 10 (queue size), test.txt (file).
+@example: ./edf (algorithm), 10 (queue size), test.txt (file).
 **/
 int main(int argc, char *argv[])
 {
