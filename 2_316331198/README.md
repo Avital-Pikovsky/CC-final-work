@@ -26,5 +26,5 @@ To run the code it is necessary to run operations in the following order:
 
 - or:
 
-   `./bd 4 sample_input.txt `
+ `./bd 4 sample_input.txt `
 
