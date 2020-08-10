@@ -1,22 +1,23 @@
-###הרצת הקוד:
-:על מנת להריץ את הקוד יש צורך להריץ פעולות בסדר הבא
-- sample_input.txt :לצרף קובץ טקסט בשם
+### To run the code:
+To run the code it is necessary to run operations in the following order:
 
- :כמו ,trieבתוכו היו הפקודות שנרצה לעשות ב
+- Attach a text file named: sample_input.txt 
+
+Inside the file will be the commands we want to do in the trie, such as:
 
  ADD, FIND, REMOVE
  
-- :לפתוח את הטרמינל ולהריץ את המייקפייל עם הפקודה
- `make`
-- :לאחר פקודה זו יווצרו שני קבצי הרצה
-1. prefix_table
-2. prefix_table_opt
+- Open the terminal and run the makefile with the command:  `make`
 
-- :על מנת להריץ את קובץ הרצה מס' 1, יש לכתוב את הפקודה הבאה
+ - After this command, two executable files will be created:
+ 
+ 1. prefix_table
+ 2. prefix_table_opt
 
- `./prefix_table`
+- To run executable file number 1, write the following command:  `./prefix_table`
+ 
 
-- :על מנת להריץ את קובץ הרצה מס' 2, יש לכתוב את הפקודה הבאה
+- To run executable file number 2, write the following command:  `./prefix_table_opt`
 
- `./prefix_table_opt`
+
 
