@@ -1,28 +1,30 @@
-###הרצת הקוד:
-:על מנת להריץ את הקוד יש צורך להריץ פעולות בסדר הבא
-- sample_input.txt :לצרף קובץ טקסט בשם
+### To run the code:
+To run the code it is necessary to run operations in the following order:
 
-:שבתוכו יהיה רצף של שלשות של חבילות שנרצה להעביר, בצורה הבאה
+- Attach a text file named: sample_input.txt 
+
+- Which will have a sequence of threes of packages that we want to transfer, in the following way:
+
 > (amount, slack, value).
 
-- :לפתוח את הטרמינל ולהריץ את המייקפייל עם הפקודה
- `make`
-- :לאחר פקודה זו יווצרו שני קבצי הרצה
+- Open the terminal and run the makefile with the command: `make`
 
-1.edf
+ - After this command, two executable files will be created:
+ 
+ 1.edf
+ 
+ 2.bd
 
-2.bd
-
-- :על מנת להריץ את התוכנית , יש לכתוב את הפקודה הבאה
+- To run the program, write the following command:
 
  `./"algorithm" "queue size" "file name"`
 
 
-- לדוגמא:
+- For example:
 
  `./edf 4 sample_input.txt `
 
- או
+- or:
 
    `./bd 4 sample_input.txt `
 
