@@ -3,9 +3,11 @@ To run the code it is necessary to run operations in the following order:
 
 - Attach a text file named: sample_input.txt 
 
-- Which will have a sequence of threes of packages that we want to transfer, in the following way:
+- The file will contain sequence of triples, each triple writen in the following way:
 
 > (amount, slack, value).
+
+#####With space between each triple.
 
 - Open the terminal and run the makefile with the command: `make`
 
