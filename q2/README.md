@@ -7,7 +7,7 @@ To run the code it is necessary to run operations in the following order:
 
 > (amount, slack, value).
 
-#####With space between each triple.
+#### With space between each triple.
 
 - Open the terminal and run the makefile with the command: `make`
 
