@@ -1,17 +1,11 @@
 **Final work** ​: Computer Networks
 
-The exam is divided into two parts: (1) programming questions with theoretical questions; and (2) the oral
-exam (see below).
-
-**Instructions** ​:
-
-1. The work should be done in singles without advice from each other. All clarifying questions can
-    be asked in our whatsapp chat or in Moodle.
-2. If a programming question is not compiling, you will get zero for the corresponding part.
+programming questions with theoretical questions.
 
 **Questions** ​:
 
-1. Packet classifier (50 points)
+1. Packet classifier:
+
 a) In this part you will implement an IP lookup table based on a binary trie that we studied. Your
     implementation should support three operations: ADD/REMOVE inserting/deleting a given prefix
     with the action to/from the trie; and FIND a new prefix, The input is read from a file in the
@@ -28,10 +22,9 @@ Found 255.255.255.255 <found action> at the depth <depth in the binary trie>
 Removed 255.255.255/24 A at the depth <depth in the binary trie> total nodes <notal nodes in binary
 trie>
 
-```
 b) Consider the following optimization: if two prefixes differ only in the last bit and point to the same
 action than both prefixes can be replaced by a single prefix with the same action.
-```
+
 **Example** ​: Two prefixes 1111* -> A 1110*-> A can be replaced by 111**->A.
 
 See the binary trie example ​here​ both for the regular and the optimized cases.
@@ -39,7 +32,7 @@ See the binary trie example ​here​ both for the regular and the optimized ca
 Add this optimization to the previous implementation of prefix tables. The FIND action should return the
 optimized prefix with the right action.
 
-```
+
 c) For implementations in a) and b) in the worst case the lookup time is equal to the maximal prefix
 length. Assume that you have an explicit constraint on a number of lookups. For instance, 8
 lookups in the table containing 32-bit prefixes. Suggest your ways how to address a fundamental
@@ -47,7 +40,6 @@ tradeoff between lookup time and the required memory to represent this table.
 d) Think about alternative ways to represent a table of prefixes with the desired balance between
 lookup time and memory requirements. Compare cons and pros of various proposals. More
 creative proposals are better valued. Not necessary binary trie should be considered.
-```
 
 **What to do** ​:
 
@@ -62,7 +54,7 @@ creative proposals are better valued. Not necessary binary trie should be consid
 covered: RIP, OSPF, IS-IS, BGP. You should have a clear understanding about their purpose, the whole
 taxonomy of routing protocols that we studied and their cons and pros.
 
-2. The nature of congestion (50 points).
+2. The nature of congestion:
 
 One of the central questions in computer networks is how to deal with congestion. As we studied
 congestion in packet networks is unavoidable if we want to exploit network resources efficiently. During
