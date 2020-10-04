@@ -1,5 +1,4 @@
 **Final work** ​: Computer Networks
-Version 1.
 
 The exam is divided into two parts: (1) programming questions with theoretical questions; and (2) the oral
 exam (see below).
