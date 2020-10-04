@@ -4,7 +4,7 @@ programming questions with theoretical questions.
 
 **Questions** ​:
 
-1. Packet classifier:
+***1. Packet classifier:***
 
 a) In this part you will implement an IP lookup table based on a binary trie that we studied. Your
     implementation should support three operations: ADD/REMOVE inserting/deleting a given prefix
@@ -41,20 +41,8 @@ d) Think about alternative ways to represent a table of prefixes with the desire
 lookup time and memory requirements. Compare cons and pros of various proposals. More
 creative proposals are better valued. Not necessary binary trie should be considered.
 
-**What to do** ​:
 
-1. Implement two prefix table representations as in a) and b). In the makefile the target for a) should
-    be ​ **prefix_table** ​ and for b) ​ **prefix_table_opt.** ​Have a clear README file explaining how to run
-    both implementations. Also add your sample input file (​ **sample_input** ​) that was used with your
-    programs.
-2. Answer c) and d) in a separate document entitled 1_<your_id>.pdf
-3. All code and <your_id>.pdf have in a separate folder entitled 1_<your_id>;
-
-**For the oral exam** ​: in addition to what you did in 1, you will need to know all routing protocols that we
-covered: RIP, OSPF, IS-IS, BGP. You should have a clear understanding about their purpose, the whole
-taxonomy of routing protocols that we studied and their cons and pros.
-
-2. The nature of congestion:
+***2. The nature of congestion:***
 
 One of the central questions in computer networks is how to deal with congestion. As we studied
 congestion in packet networks is unavoidable if we want to exploit network resources efficiently. During
@@ -119,8 +107,6 @@ Running example: edf 10 input_file
 Total arrived packets 1000, total dropped packets 200, total transmitted packets 800, total transmitted
 value 2400.
 
-During the Zoom meeting I will give several dynamic examples of the requested policies. After this
-meeting more examples can be found ​here​.
 
 In this part you will have the implementation of the both policies, README explaining how to compile and
 run, sample input (sample_input) that you used for testing and the results of the both policies on this
@@ -135,4 +121,3 @@ sample_input (edf_sample and bd_sample).
        EDF outperform Bounded delay and vice versa? Explain why.
     d. Suggest other policies that can be useful in the defined model for the defined objective.
        Add cons and pros of all three policies.
-All your questions add to 2_<your id>.pdf
